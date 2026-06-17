@@ -58,23 +58,23 @@
 name,marks,rank='Anita',92.567,3
 
 #f string
-print(f'Hello, {name}')
+# print(f'Hello, {name}')
 
-#Format numbers
-print(f'Marks: {marks:.2f}')
-print(f'Marks: {marks:.0f}')
-print(f'Count: {1000000:,}')
+# #Format numbers
+# print(f'Marks: {marks:.2f}')
+# print(f'Marks: {marks:.0f}')
+# print(f'Count: {1000000:,}')
 
-#padding and alignment
-print(f'{name:<15} | {marks:>8.2f} | Rank:{rank}')
-print(f'hello {name:^10}')
-print(f'hello {name:>10}')
-print(f'hello {name:<10}')
-print(f'hello {name:*^11}')
+# #padding and alignment
+# print(f'{name:<15} | {marks:>8.2f} | Rank:{rank}')     #< = right side padding, > = left side padding
+# print(f'hello {name:^10}')
+# print(f'hello {name:>10}')
+# print(f'hello {name:<10}')
+# print(f'hello {name:*^11}')
 
-#Expression inside {}
-price,gst=500,0.18
-print(f'Price:Rs.{price} | GST:Rs.{price*gst:.2f} |Total:Rs{price*(1+gst):.2f}')
+# #Expression inside {}
+# price,gst=500,0.18
+# print(f'Price:Rs.{price} | GST:Rs.{price*gst:.2f} |Total:Rs{price*(1+gst):.2f}')
 
 string="Hello, How are you doing today?"
 #Count vowels in the string
@@ -83,10 +83,8 @@ count=0
 for ch in str:
     if(ch=='a' or ch=='e' or ch=='i' or ch=='o' or ch=='u'):
         count+=1
-    else:
-        count=0
     
-    print(count)
+print("Total no. of vowels : ",count)
 
 #Print you from the string
 print(string[15:18])
